@@ -5,10 +5,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-valor_pacote = 7 
-valor_album = 75
-qtde_pacote = 7
-qtde_album = 980
+valor_pacote = 20
+valor_album = 80
+qtde_pacote = 20
+qtde_album = 180
 
 # %%
 
@@ -50,7 +50,7 @@ print(f'Valor total gasto (Pacotes e Álbum): R${valor_total}')
 # %%
 # Agora com amigos
 
-def completa_albuns(qtde_album=980, qtde_pacote=7, N=2):
+def completa_albuns(qtde_album=180, qtde_pacote=6, N=2):
    
     albuns = [set() for i in range(N)]
     count = 0
@@ -90,5 +90,5 @@ df_status
 
 sns.barplot(df_status, x="Qtde Pessoas", y="Valor", palette='rainbow')
 plt.grid(True)
-plt.suptitle("Valor para completar album da copa")
-plt.title("Album = 980 / Pacote = 7")
+plt.suptitle("Valor para completar bide pokemon")
+plt.title("Album = 180 / Pacote = 6")
